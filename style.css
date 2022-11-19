@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0,0,0,0.7)
 }
 
 #container{
@@ -31,6 +35,8 @@
     gap: 20px;
 }
 
+/* PRICING BOXES */
+
 article{
     width: 300px;
     height: 400px;
@@ -38,15 +44,25 @@ article{
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+    transition: .3s ease-in-out;
+
 }
 
 article p{
     margin: 20px 0;
+    font-weight: 700;
 }
 
 article h1{
     margin-bottom: 20px;
-    font-size: 3.5em;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 span{
+    font-size: .7em;
 }
 
 article button{
@@ -60,6 +76,29 @@ article button{
     color: white;
     background: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
 
+}
+
+/* PRICING BOX ANIMATIONS */
+
+article:hover{
+    background: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    padding: 30px;
+    width: auto;
+    margin: -10px;
+    
+}
+
+article:hover button{
+    background: white;
+    color: rgba(0,0,0,0.7)
+}
+
+article:hover h1, article:hover span, article:hover p {
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 /* BUTTON TOGGLE SWITCHER */
@@ -130,3 +169,4 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
