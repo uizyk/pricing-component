@@ -14,7 +14,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: hsl(234, 14%, 74%);
+    background: linear-gradient(hsl(236, 32%, 59%),hsl(237, 43%, 54%));
     gap: 40px;
 }
 
@@ -170,3 +170,15 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/* MEDIAQUERIES */
+
+@media only screen and (max-width: 1090px){
+    #pricing--section{
+        flex-direction: column;
+    }
+
+    #container{
+        height: 100%;
+    }
+
+}
